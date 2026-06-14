@@ -22,11 +22,8 @@
     background-image:url(amazon_logo.png);
     background-size:cover;
     height:50px;
-    width:114px;
-
-    
+    width:114px;   
 }
-
 
 .border{
     border:1.5px solid transparent;
@@ -34,7 +31,6 @@
 
 .border:hover{
     border:1.5px solid white;
-    
 }
 
 .first{
