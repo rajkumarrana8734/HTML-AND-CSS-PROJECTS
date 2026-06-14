@@ -11,7 +11,7 @@
     color:white;
     display:flex;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 
 
@@ -131,4 +131,38 @@
     width:85%;
     font-size:0.85rem;
 }
+
+.hero{
+    
+    height:350px;
+    background-image:url(background-image.jpg);
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    }
+
+.hero-massage{
+    background-color:#f5f6f6;
+    color:#0f1111;
+    height:40px;
+    width:95%;
+    font-size:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    margin-bottom:25px;
+}
+
+.hero-massage a{
+    text-decoration:none;
+    color:#007185
+}
+.hero-massage a:hover{
+    text-decoration:underline;
+}
+
+
+
    
