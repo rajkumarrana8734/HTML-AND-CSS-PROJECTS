@@ -216,4 +216,19 @@ h2{
 .see-more:hover{
     color:#c71f1f;
 }
+
+footer{
+    margin-top:20px;
+}
+
+.foot-pannel1{
+    background-color: #37475a;
+    color: #e3e6e6;
+    min-height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+
+}
    
