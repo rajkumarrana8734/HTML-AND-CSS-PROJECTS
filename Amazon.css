@@ -275,8 +275,29 @@ ul a:hover{
 
 .logo{
     background-image: url(amazon_logo.png);
+    
     background-size: cover;
     height:50px;
     width:100px;
 }
    
+.foot-pannel4{
+    background-color: #131a22;
+    height:60px; 
+    display:flex;
+    padding-top: 35px;
+    justify-content: center;   
+    text-align: center;
+    color:#dddddd;
+    font-size: 12px;
+}
+
+.foot-pannel4 a{
+    text-decoration: none;
+    color:#dddddd;
+    padding-right:10px;
+}
+
+.foot-pannel4 a:hover{
+    text-decoration: underline;
+}
