@@ -2,7 +2,9 @@
     margin:0;
     border:border-box;
     font-family:arial;
+
 }
+
 
 .navbar{
     background-color:#0f1111;
@@ -21,12 +23,9 @@
     background-size:cover;
     height:50px;
     width:114px;
-<<<<<<< HEAD
 
-    }    
-=======
+    
 }
->>>>>>> c17327218b2fc7c7427ad765ee8f138aedccff32
 
 
 .border{
@@ -35,10 +34,7 @@
 
 .border:hover{
     border:1.5px solid white;
-<<<<<<< HEAD
-
-=======
->>>>>>> c17327218b2fc7c7427ad765ee8f138aedccff32
+    
 }
 
 .first{
@@ -165,10 +161,54 @@
     text-decoration:none;
     color:#007185
 }
+
 .hero-massage a:hover{
     text-decoration:underline;
 }
 
+.shop{
+    display:flex;
+    justify-content:space-evenly;
+    background-color: #e3e6e6;
+}
 
+.products{
+    /* border:2px solid black; */
+    height:400px;
+    width:23%;
+    background-color:white
+    
+}
 
+.box-image{
+    background-size:cover;
+    height:300px;
+    
+    
+}
+
+.box-contact{
+    margin-left:1rem;
+    margin-right:1rem;
+    margin-top:1rem;
+}
+
+h2{
+    color:#0f1111;
+    padding-left:1rem;
+    font-size:21px;
+    padding-top:1rem;
+
+}
+
+.see-more{
+    color:#2162a1;
+    text-decoration:none;
+    font-size:14px;
+    
+}
+
+.see-more:hover{
+    color:#1a89f7;
+}
    
