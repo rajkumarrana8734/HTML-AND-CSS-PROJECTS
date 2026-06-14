@@ -4,6 +4,9 @@
     font-family:arial;
 
 }
+body{
+    background-color:#e3e6e6 ;
+}
 
 
 .navbar{
@@ -138,6 +141,7 @@
     display:flex;
     justify-content:center;
     align-items:flex-end;
+    
     }
 
 .hero-massage{
