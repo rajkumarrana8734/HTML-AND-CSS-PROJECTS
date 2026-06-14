@@ -183,6 +183,7 @@ body{
 .box-image{
     background-size:cover;
     height:300px;
+    margin-bottom: 1rem;
     
     
 }
@@ -191,6 +192,7 @@ body{
     margin-left:1rem;
     margin-right:1rem;
     margin-top:1rem;
+
 }
 
 h2{
