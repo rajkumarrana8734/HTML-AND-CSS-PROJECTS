@@ -242,7 +242,7 @@ footer{
 
 .foot-pannel2{
     background-color: #222f3d;
-    height:400px;
+    height:300px;
     display: flex;
     justify-content: space-evenly;
     padding-top:40px;
@@ -281,7 +281,7 @@ ul a:hover{
     width:100px;
 }
    
-.foot-pannel4{
+.foot-pannel5{
     background-color: #131a22;
     height:60px; 
     display:flex;
@@ -292,12 +292,36 @@ ul a:hover{
     font-size: 12px;
 }
 
-.foot-pannel4 a{
+.foot-pannel5 a{
     text-decoration: none;
     color:#dddddd;
     padding-right:10px;
 }
 
-.foot-pannel4 a:hover{
+.foot-pannel5 a:hover{
     text-decoration: underline;
+}
+
+.foot-pannel4{
+    background-color:#131a22;
+   
+    height:610px;
+}
+
+.pannel4-line{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.first-line{
+    font-size: 12px;
+    
+
+}
+
+.second-line{
+    font-size: 12px;
+    
+
 }
