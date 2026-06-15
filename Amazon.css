@@ -304,24 +304,24 @@ ul a:hover{
 
 .foot-pannel4{
     background-color:#131a22;
-    height:320px;
+    height:380px;
 }
 
 .pannel4-line{
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     
 }
 
 .first-line{
     font-size: 12px;
-    
-
+    color:#dddddd;
 }
 
 .second-line{
     font-size: 12px;
-    
+    color:#999999;
 
 }
