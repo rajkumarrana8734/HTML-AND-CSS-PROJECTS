@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo{
+    background-image: url(resto-logo.png);
+    background-size: cover;
+    height:85px;
+    width:100px;
+    
+}
