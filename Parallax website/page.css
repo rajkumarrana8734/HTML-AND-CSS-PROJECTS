@@ -53,10 +53,40 @@ body {
   text-align: center;
 }
 .section-light {
-  background-color: #f4f4f4;
-  color: #666;
+  background-color: #343e35;
+  color: white;
+  text-align:justify;
+}
+.section-light h2{
+  display: flex;
+  justify-content: center;
+  color:rgb(68, 255, 0);
 }
 .section-dark {
-  background-color: #282e34;
-  color: #ddd;
+  background-color: #37463d;
+  color: white;
+  text-align:justify;
+}
+
+.section-dark h2{
+  display: flex;
+  justify-content: center;
+  color:rgb(68, 255, 0);
+}
+
+.foot{
+  height: 50px;
+  background-color: #92e36d;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url(foot.jpg);
+  background-size:cover;
+  font-size:20px;
+  font-weight: bolder;
+}
+
+.foot a{
+   text-decoration: none;
+   color:rgb(20, 31, 31);
 }
