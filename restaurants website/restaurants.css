@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-image:url(image.png);
-}
+
 
 .navbar{
     height: 100px;
@@ -94,7 +92,7 @@ body{
     color:rgb(255, 241, 241);
 }
 
-button{
+.but{
     margin-top:15px;
     margin-left:45px;
     padding:10px;
@@ -104,7 +102,7 @@ button{
     background-color: #ffcc00;
 }
 
-.button a{
+.but a{
     text-decoration:none;
     color:black;
 }
@@ -112,6 +110,10 @@ button{
 .section4{
     display: flex;
     justify-content: center;
+    background-image: url(section4.jpg);
+    background-size: cover;
+    height:300px;
+    align-items: center;
 
 }
 
@@ -126,6 +128,7 @@ button{
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+   
     
 }
 .box2{
@@ -138,8 +141,7 @@ button{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 .box3{
    background-color: rgb(0, 0, 0);
@@ -152,6 +154,7 @@ button{
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+   
     
     
 }
@@ -168,6 +171,66 @@ button{
     overflow: hidden;
 }
 
+.resto-d{
+    display: flex;
+    background-color:  rgb(35, 34, 34);
+    
+}
+
+.dec{
+    height:250px;
+     width:50%;
+     margin-top: 30px;
+     border-top-right-radius: 25px;
+     border-bottom-right-radius: 25px;
+
+}
+
+.phote{
+    height:250px;
+    width:50%;
+    background-image: url(image.png);
+    background-size: cover;
+    margin-top: 30px;
+    border-top-left-radius: 25px;
+     border-bottom-left-radius: 25px;
+}
+
+.dec{
+    background-color: rgb(35, 34, 34);
+}
+.dec h4{
+    font-size: 20px;
+    color:gold;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.dec h1{
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.dec p{
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.read{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding:10px;
+    border-radius: 20px;
+    border-width:2px;
+    border-color: rgb(255, 157, 0);
+    font-weight: bold;
+}
+
+.read:hover{
+    background-color: rgb(255, 157, 0);;
+}
 
 
 
