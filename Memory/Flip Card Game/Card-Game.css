@@ -33,6 +33,22 @@ body{
     text-align: center;
 }
 
+h1{
+    color:var(--gold);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700px;
+    letter-spacing: 0.03px;
+    margin:0 0 4px;
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+
+}
+
+.subtitle{
+    color:var(--muted);
+    font-size: 0.82rem;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
 
 
 
