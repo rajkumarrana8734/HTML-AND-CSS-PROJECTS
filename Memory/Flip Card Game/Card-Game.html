@@ -1,155 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory/Flip Card Game</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="Card-Game.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Match</title>
+<link rel="stylesheet" href="Card-Game.css">
 </head>
 <body>
-    <div class="app">
-        <h1>Memory Match</h1>
-        <div class="subtitle">Click any card to flip it. Find all 8 matching pairs</div>
-    </div>
-   <!-- <div class="win-banner">All pairs matched! 🎉</div> -->
-
-   
-    <div class="grid " id="grid">
-        <div class="card">
-            <input type="checkbox" id="card1">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍎</div>
-            </div>
-        </div>
-
-        <div class="card">
-            <input type="checkbox" id="card2">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍌</div>
-            </div>
-        </div>
-
-        <div class="card">
-            <input type="checkbox" id="card3">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍇</div>
-            </div>
-        </div>
-
-
-         <div class="card">
-            <input type="checkbox" id="card4">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍒</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card5">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍑</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card6">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍍</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card7">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🥝</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card8">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍉</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card9">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍎</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card10">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍇</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card11">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍑</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card12">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍉</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card13">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍍</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card14">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍌</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card15">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🥝</div>
-            </div>
-        </div>
-
-         <div class="card">
-            <input type="checkbox" id="card16">
-            <div class="card-inner">
-                <div class="card-face card-back"></div>
-                <div class="card-face card-font">🍒</div>
-            </div>
-        </div>
  
-        
-    
+<div class="app">
+  <h1>Memory Match</h1>
+
+  <div class="hint">Click any card to flip it. Find all 8 matching pairs.</div>
+ 
+  <div class="win-banner">All pairs matched! 🎉</div>
+ 
+  <div class="grid" id="grid">
+ 
+    <div class="card">
+      <input type="checkbox" id="card1">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍎</div>
+      </div>
     </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card2">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍌</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card3">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍇</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card4">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍒</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card5">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍑</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card6">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍍</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card7">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🥝</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card8">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍉</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card9">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍎</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card10">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍇</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card11">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍑</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card12">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍉</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card13">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍍</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card14">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍌</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card15">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🥝</div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <input type="checkbox" id="card16">
+      <div class="card-inner">
+        <div class="card-face card-back"></div>
+        <div class="card-face card-front">🍒</div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <div class="controls">
+    <p class="hint" style="margin-bottom:0;">Refresh the page to start a new game.</p>
+  </div>
+</div>
+ 
 </body>
 </html>

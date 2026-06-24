@@ -1,66 +1,206 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+  :root {
+    --bg: #241b2f;
+    --bg-soft: #2e2240;
+    --gold: #d4af6a;
+    --cream: #faf6ed;
+    --match: #7fd9a8;
+    --muted: #b8a9c9;
+    --radius: 14px;
+  }
  
-:root {
-  --bg: #241b2f;
-  --bg-soft: #2e2240;
-  --gold: #d4af6a;
-  --cream: #faf6ed;
-  --match: #7fd9a8;
-  --muted: #b8a9c9;
-  --radius: 14px;
-}
-
-body{
-    min-height:100vh;
+  * { box-sizing: border-box; }
+ 
+  body {
+    margin: 0;
+    min-height: 100vh;
     background: var(--bg);
-    background-image: radial-gradient(circle at 20% 15%, rgba(255, 4, 4, 0.131), transparent 90%),
-    radial-gradient(circle at 80% 85%, rgba(255, 0, 255, 0.113), transparent 90%);
+    background-image:
+      radial-gradient(circle at 20% 15%, rgba(255, 0, 0, 0.111), transparent 45%),
+      radial-gradient(circle at 80% 85%, rgba(123, 0, 255, 0.212), transparent 45%);
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:var(--cream);
-    padding:24px;
-}
-
-.app{
-    width:100%;
-    max-width:480px;
+    justify-content: center;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--cream);
+    padding: 24px;
+  }
+ 
+  .app {
+    width: 100%;
+    max-width: 480px;
     text-align: center;
-}
-
-h1{
-    color:var(--gold);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:700px;
-    letter-spacing: 0.03px;
-    margin:0 0 4px;
+  }
+ 
+  h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 700;
     font-size: clamp(1.8rem, 7vw, 2.4rem);
-
-}
-
-.subtitle{
-    color:var(--muted);
+    letter-spacing: 0.03em;
+    margin: 0 0 4px;
+    color: var(--gold);
+  }
+ 
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+ 
+  .hint {
+    color: var(--muted);
     font-size: 0.82rem;
     margin-bottom: 22px;
     line-height: 1.5;
-}
-
-.grid{
-    display:grid;
+  }
+ 
+  /* ---------- GRID ---------- */
+ 
+  .grid {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:10px;
-    background-color: var(--bg-soft);
-    padding:14px;
-    border-radius:20px;
-    box-shadow:0 8px 24px rgba(0, 0, 255, 0.35),
-              0 2px 6px rgba(17, 25, 255, 0.25); ;
-}
+    gap: 10px;
+    background: var(--bg-soft);
+    padding: 14px;
+    border-radius: 18px;
+    box-shadow:0 8px 24px rgb(34, 0, 255), 
+            0 2px 6px rgba(255, 2, 2, 0.25);
+  }
+ 
 
-
-
-
+ 
+  .card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    perspective: 800px;
+  }
+ 
+  .card input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+ 
+  .card-inner {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.3, 1);
+  }
+ 
+  .card input:checked ~ .card-inner {
+    transform: rotateY(180deg);
+  }
+ 
+  .card-face {
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+  }
+ 
+  .card-back {
+    background:
+      repeating-linear-gradient(45deg, rgba(212,175,106,0.18) 0 6px, transparent 6px 16px),
+      linear-gradient(135deg, #3a2b4f, #2a2038);
+    border: 1px solid rgba(212,175,106,0.35);
+  }
+ 
+  .card-back::after {
+    content: "?";
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+    opacity: 0.6;
+  }
+ 
+  .card-front {
+    background: var(--cream);
+    transform: rotateY(180deg);
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+ 
+  .card:hover .card-back {
+    border-color: var(--gold);
+  }
+ 
+  /* matched pair glow: when both checkboxes sharing a pair-id are checked */
+  .grid:has(#card1:checked):has(#card9:checked) #card1 ~ .card-inner .card-front,
+  .grid:has(#card1:checked):has(#card9:checked) #card9 ~ .card-inner .card-front,
+ 
+  .grid:has(#card2:checked):has(#card14:checked) #card2 ~ .card-inner .card-front,
+  .grid:has(#card2:checked):has(#card14:checked) #card14 ~ .card-inner .card-front,
+ 
+  .grid:has(#card3:checked):has(#card10:checked) #card3 ~ .card-inner .card-front,
+  .grid:has(#card3:checked):has(#card10:checked) #card10 ~ .card-inner .card-front,
+ 
+  .grid:has(#card4:checked):has(#card16:checked) #card4 ~ .card-inner .card-front,
+  .grid:has(#card4:checked):has(#card16:checked) #card16 ~ .card-inner .card-front,
+ 
+  .grid:has(#card5:checked):has(#card11:checked) #card5 ~ .card-inner .card-front,
+  .grid:has(#card5:checked):has(#card11:checked) #card11 ~ .card-inner .card-front,
+ 
+  .grid:has(#card6:checked):has(#card13:checked) #card6 ~ .card-inner .card-front,
+  .grid:has(#card6:checked):has(#card13:checked) #card13 ~ .card-inner .card-front,
+ 
+  .grid:has(#card7:checked):has(#card15:checked) #card7 ~ .card-inner .card-front,
+  .grid:has(#card7:checked):has(#card15:checked) #card15 ~ .card-inner .card-front,
+ 
+  .grid:has(#card8:checked):has(#card12:checked) #card8 ~ .card-inner .card-front,
+  .grid:has(#card8:checked):has(#card12:checked) #card12 ~ .card-inner .card-front {
+    background: var(--match);
+    box-shadow: 0 0 0 2px var(--match), 0 0 16px rgba(127,217,168,0.6);
+    animation: settle 0.4s ease;
+  }
+ 
+  @keyframes settle {
+    0% { transform: rotateY(180deg) scale(1.08); }
+    100% { transform: rotateY(180deg) scale(1); }
+  }
+ 
+  /* ---------- WIN BANNER ---------- */
+ 
+  .win-banner {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--match);
+    transition: max-height 0.35s ease, opacity 0.35s ease, margin 0.35s ease;
+    margin-bottom: 0;
+  }
+ 
+.app:has(
+    #card1:checked, #card2:checked, #card3:checked, #card4:checked,
+    #card5:checked, #card6:checked, #card7:checked, #card8:checked
+  ):has(
+    #card9:checked, #card10:checked, #card11:checked, #card12:checked,
+    #card13:checked, #card14:checked, #card15:checked, #card16:checked
+  ) .win-banner {
+    /* fallback partial hint - real "all matched" full check below */
+  }
+ 
+  .app:has(#card1:checked):has(#card9:checked):has(#card2:checked):has(#card14:checked):has(#card3:checked):has(#card10:checked):has(#card4:checked):has(#card16:checked):has(#card5:checked):has(#card11:checked):has(#card6:checked):has(#card13:checked):has(#card7:checked):has(#card15:checked):has(#card8:checked):has(#card12:checked) .win-banner {
+    max-height: 40px;
+    opacity: 1;
+    margin-bottom: 14px;
+  }
+ 
+  .controls {
+    margin-top: 22px;
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .card-inner, .win-banner { transition: none; }
+  }
