@@ -19,3 +19,12 @@ body{
     border-radius: 10px;
     
 }
+
+.heading{
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.254);
+    padding-left:15px;
+    padding-top: 15px;
+}
+
+
