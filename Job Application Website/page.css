@@ -2,14 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
     min-height: 100vh;
     min-width:100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(background.webp);
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+ 
 }
 
 .application{
@@ -17,6 +22,8 @@ body{
     height:550px;
     border:2px solid black;
     border-radius: 10px;
+    box-shadow: 1px 5px 10px black;
+    background-color: antiquewhite;
     
 }
 
@@ -25,6 +32,136 @@ body{
     background-color: rgba(0, 0, 255, 0.254);
     padding-left:15px;
     padding-top: 15px;
+    gap:10px;
+    
 }
+
+.heading h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: blue;
+    text-shadow: 1px 1px 1px rgb(255, 98, 0);
+}
+
+.heading h3{
+    font-size: 25px;
+    padding-top: 10px;
+    color:rgb(255, 98, 0);
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.form h1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.form input{
+    height: 40px;
+    width:230px;
+    font-size: 20px;
+}
+  
+.line-2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.email{
+    padding-top: 20px;
+    padding-left: 10px;
+
+    
+    
+
+}
+
+.email h1{
+    font-size: 20px;
+    
+}
+
+.email input{
+    height: 40px;
+    width:230px;
+    font-size: 20px;
+}
+
+.email select{
+    height: 40px;
+    width:230px;
+    font-size: 20px;
+}
+
+
+
+.address{
+    padding-top: 20px;
+    padding-left: 15px
+
+}
+
+.address h1{
+    font-size: 20px;
+    
+}
+
+.address textarea{
+    height: 70px;
+    width:475px;
+    font-size: 20px;
+
+}
+
+
+.line-4{
+    display: flex;
+    justify-content: center;
+
+
+} 
+
+.city{
+    padding-top: 20px;
+    padding-left: 10px;
+ 
+}
+
+.city h1{
+    font-size: 20px;
+}
+
+.city input{ 
+    height: 40px;
+    width:230px;
+    font-size: 20px;
+}
+
+.pincode{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.pincode h1{
+    font-size: 20px;
+}
+
+.pincode input{
+    height: 40px;
+    width:230px;
+    font-size: 20px;
+
+}
+
+
 
 
