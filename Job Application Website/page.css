@@ -19,10 +19,10 @@ body{
 
 .application{
     width:500px;
-    height:550px;
+    height:590px;
     border:2px solid black;
     border-radius: 10px;
-    box-shadow: 1px 5px 10px black;
+    box-shadow: 5px 10px 20px black;
     background-color: antiquewhite;
     
 }
@@ -161,6 +161,77 @@ body{
     font-size:20px;
 
 }
+
+.line-5{
+    display: flex;
+    justify-content: center;
+}
+
+.date{
+    padding-top: 20px;
+    padding-left: 10px;
+ 
+}
+
+.date h1{
+    font-size: 20px;
+}
+
+.date input{ 
+    height: 40px;
+    width:230px;
+    font-size: 20px;
+}
+
+.cv{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.cv h1{
+    font-size: 20px;
+}
+
+.file{
+    border: 1px solid black;
+    height: 40px;
+    width:230px;
+    font-size:20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+    padding-top: 25px;
+   
+}
+
+.button p {
+    background-color: rgb(255, 60, 60);
+    border-radius: 30px;
+    padding:8px;
+    color: white;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.button p:hover{
+    background-color: red;
+}
+
+
+
+
 
 
 
