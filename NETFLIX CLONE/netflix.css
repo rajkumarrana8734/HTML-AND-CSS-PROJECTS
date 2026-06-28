@@ -3,3 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.main{
+    background-image: url(hero.jpg);
+    height:80vh;
+}
