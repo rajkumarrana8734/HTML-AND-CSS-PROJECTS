@@ -48,7 +48,7 @@ nav img{
     padding: 10px 20px;
     border-radius: 6px;
     position: relative;
-    z-index: 10;
+    z-index: 10; 
 }
 
 .sign-in a{
