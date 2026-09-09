@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+}
+
+
+/* Navbar */
+
+header{
+    background:rgba(0,0,0,0.8);
+    position:sticky;
+    top:0;
+    z-index:10;
+    backdrop-filter:blur(10px);
+}
+
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+
+nav h2{
+    color:#00ffcc;
+    font-size:30px;
+    text-shadow:0 0 15px #00ffcc;
+}
+
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+
+nav ul li{
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+
+nav ul li:hover{
+    color:#00ffcc;
+}
+
+
+
+/* Hero */
+
+.hero{
+
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    padding-left:8%;
+}
+
+
+.hero h1{
+
+    font-size:70px;
+    color:white;
+    text-shadow:0 0 20px #00ffcc;
+}
+
+
+.hero p{
+
+    margin:20px 0;
+    font-size:22px;
+    max-width:600px;
+}
+
+
+
+button{
+
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#00ffcc;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+button:hover{
+
+    background:white;
+    transform:scale(1.1);
+    box-shadow:0 0 25px #00ffcc;
+
+}
+
+
+
+/* Games Section */
+
+
+.games,
+.gallery,
+.news,
+.about,
+.contact{
+
+    padding:70px 8%;
+    text-align:center;
+
+}
+
+
+.games h1,
+.gallery h1,
+.news h1,
+.about h1,
+.contact h1{
+
+    font-size:45px;
+    margin-bottom:40px;
+    color:#00ffcc;
+
+}
+
+
+
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+
+}
+
+
+.card{
+
+    width:320px;
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    padding-bottom:25px;
+    transition:.4s;
+    border:1px solid #222;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-15px);
+    box-shadow:0 0 30px #00ffcc;
+
+}
+
+
+
+.card img{
+
+    width:100%;
+    height:200px;
+    object-fit:cover;
+
+}
+
+
+.card h2{
+
+    margin:20px 0;
+}
+
+
+.card p{
+
+    color:#aaa;
+    margin-bottom:20px;
+
+}
+
+
+
+/* Gallery */
+
+
+.images{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+
+.images img{
+
+    width:350px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+
+}
+
+
+.images img:hover{
+
+    transform:scale(1.08);
+    box-shadow:0 0 30px #00ffcc;
+
+}
+
+
+
+/* News */
+
+
+.news{
+
+    background:#0b0b0b;
+
+}
+
+
+.news p{
+
+    font-size:22px;
+    line-height:2;
+
+}
+
+
+
+
+/* About */
+
+
+.about p{
+
+    font-size:20px;
+    color:#ccc;
+
+}
+
+
+
+
+/* Contact */
+
+
+.contact input{
+
+    display:block;
+    margin:15px auto;
+    width:350px;
+    padding:15px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    font-size:17px;
+
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    text-align:center;
+    padding:25px;
+    background:#000;
+    color:#777;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+nav ul{
+
+    gap:15px;
+
+}
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+.contact input{
+
+    width:90%;
+
+}
+
+
+}
